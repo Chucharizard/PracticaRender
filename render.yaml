@@ -9,7 +9,7 @@ services:
   - type: web
     name: practicarender-backend
     runtime: node
-    plan: free
+    plan: starter
     buildCommand: cd backend && npm install
     startCommand: cd backend && npm start
     envVars:
@@ -42,7 +42,7 @@ services:
   - type: web
     name: practicarender-frontend
     runtime: static
-    plan: free
+    plan: starter
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: client/dist
     envVars:
